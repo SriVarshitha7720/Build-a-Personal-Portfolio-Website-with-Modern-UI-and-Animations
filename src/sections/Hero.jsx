@@ -75,7 +75,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
-              className="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-sans font-light leading-relaxed max-w-xl mb-10"
+              className="text-base sm:text-lg text-slate-900 dark:text-slate-100 font-sans font-light leading-relaxed max-w-xl mb-10"
             >
               Full Stack Developer with hands-on experience in React Native, React, JavaScript, and modern web technologies. Skilled in building responsive applications, API integrations, and delivering scalable cloud solutions.
             </motion.p>

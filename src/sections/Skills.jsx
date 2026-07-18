@@ -86,7 +86,7 @@ export default function Skills() {
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-950 dark:text-white mb-4">
             Technical Stack
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 max-w-lg font-light text-sm sm:text-base">
+          <p className="text-slate-900 dark:text-slate-200 max-w-lg font-light text-sm sm:text-base">
             An overview of the programming languages, frameworks, databases, and DevOps tools in my stack.
           </p>
           <div className="w-12 h-1 bg-gradient-to-r from-[#264933] to-[#f0a202] rounded-full mt-4"></div>

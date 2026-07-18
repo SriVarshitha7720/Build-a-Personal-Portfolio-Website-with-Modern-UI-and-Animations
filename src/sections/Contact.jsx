@@ -75,10 +75,10 @@ export default function Contact() {
           <span className="text-[#f0a202] font-mono text-xs uppercase tracking-widest font-semibold mb-2 block">
             — Contact
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-955 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-950 dark:text-white mb-4">
             Get In Touch
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 max-w-lg font-light text-sm sm:text-base">
+          <p className="text-slate-900 dark:text-slate-200 max-w-lg font-light text-sm sm:text-base">
             Have a question, project proposal, or just want to say hi? Drop me a line and I'll get back to you soon.
           </p>
           <div className="w-12 h-1 bg-gradient-to-r from-[#264933] to-[#f0a202] rounded-full mt-4"></div>
@@ -99,7 +99,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white">
                 Let's chat.
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 font-sans font-light leading-relaxed text-sm sm:text-base">
+              <p className="text-slate-900 dark:text-slate-200 font-sans font-light leading-relaxed text-sm sm:text-base">
                 Whether you're looking to hire a developer, build a custom application, or discuss mobile app ideas, my inbox is always open.
               </p>
 

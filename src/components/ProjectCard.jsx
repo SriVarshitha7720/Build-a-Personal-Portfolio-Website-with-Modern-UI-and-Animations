@@ -129,7 +129,7 @@ export default function ProjectCard({ project, index }) {
             <h3 className="text-xl font-bold font-display text-slate-800 dark:text-white mb-2 group-hover:text-[#f0a202] transition-colors">
               {title}
             </h3>
-            <p className="text-slate-500 dark:text-slate-300 text-sm leading-relaxed mb-6 font-sans font-light">
+            <p className="text-slate-900 dark:text-slate-200 text-sm leading-relaxed mb-6 font-sans font-light">
               {description}
             </p>
           </div>
