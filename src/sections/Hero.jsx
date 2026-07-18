@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowRight, Download, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   const containerRef = useRef(null);
@@ -41,8 +41,7 @@ export default function Hero() {
       ref={containerRef}
       className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-16 px-6"
     >
-      {/* 1. Parallax background elements */}
-      {/* Abstract mesh/grid that moves slowly */}
+      {/* Parallax background elements */}
       <motion.div 
         style={{ y: bgGridY }}
         className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-25 z-0"
@@ -71,7 +70,7 @@ export default function Hero() {
           className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-purple-500/20 bg-purple-500/5 text-purple-300 text-xs font-mono mb-8 backdrop-blur-md"
         >
           <Sparkles className="w-3.5 h-3.5 text-purple-400" />
-          <span>Available for Frontend & Full-Stack Roles</span>
+          <span>Full Stack Developer Intern</span>
         </motion.div>
 
         {/* Name and Title */}
@@ -81,9 +80,9 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1], delay: 0.2 }}
           className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 font-display"
         >
-          Designing & Building <br />
+          Hi, I'm <br />
           <span className="bg-gradient-to-r from-purple-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent">
-            Digital Experiences
+            Narla Sri Varshitha
           </span>
         </motion.h1>
 
@@ -94,7 +93,7 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1], delay: 0.35 }}
           className="text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed mb-10 font-sans font-light"
         >
-          Hi, I'm <strong className="text-white font-medium">Srivarshitha Narla</strong>, a software developer crafting premium, responsive, and performance-optimized web solutions with beautiful user interfaces.
+          A <strong className="text-white font-medium">Full Stack Developer</strong> with hands-on experience in React Native, React, JavaScript, PHP, and modern web technologies. I specialize in building highly responsive frontends and secure API integrations.
         </motion.p>
 
         {/* Action Buttons */}
@@ -110,7 +109,7 @@ export default function Hero() {
             className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold rounded-full shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20 hover:scale-102 active:scale-98 transition-all cursor-pointer"
             id="hero-primary-cta"
           >
-            View Work
+            View My Projects
             <ArrowRight className="w-5 h-5" />
           </a>
           <a
@@ -123,7 +122,7 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Floating visual cue */}
+        {/* Floating scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 1, 0] }}

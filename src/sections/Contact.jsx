@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Send, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Mail, Send, CheckCircle2, ArrowRight, Brain, Trophy } from 'lucide-react';
 
 const Github = ({ className = "w-6 h-6" }) => (
   <svg
@@ -97,12 +97,12 @@ export default function Contact() {
                 Let's chat.
               </h3>
               <p className="text-slate-300 font-sans font-light leading-relaxed">
-                Whether you're looking to hire a developer, build a custom application, or discuss UI/UX ideas, my inbox is always open.
+                Whether you're looking to hire a developer, build a custom application, or discuss mobile app ideas, my inbox is always open.
               </p>
 
               {/* Direct Mail Card */}
               <a 
-                href="mailto:srivarshitha.narla@gmail.com"
+                href="mailto:narlasrivarshitha@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-xl border border-slate-900 bg-slate-950/40 hover:border-slate-800 transition-colors group cursor-pointer"
                 id="contact-email-link"
               >
@@ -112,7 +112,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-sm text-slate-400">Direct Email</h4>
                   <p className="text-base text-white font-mono group-hover:text-purple-400 transition-colors">
-                    srivarshitha.narla@gmail.com
+                    narlasrivarshitha@gmail.com
                   </p>
                 </div>
               </a>
@@ -121,28 +121,48 @@ export default function Contact() {
             {/* Social profiles list */}
             <div className="mt-12 lg:mt-0">
               <h4 className="font-mono text-xs uppercase tracking-wider text-slate-500 mb-4">
-                Connect Elsewhere
+                Find Me On
               </h4>
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-4">
                 <a
                   href="https://github.com/Srivarshitha-Narla"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all"
+                  className="flex items-center gap-2 p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all text-xs font-mono"
                   aria-label="GitHub Profile"
                   id="contact-social-github"
                 >
-                  <Github className="w-6 h-6" />
+                  <Github className="w-5 h-5" /> GitHub
                 </a>
                 <a
                   href="https://linkedin.com/in/srivarshitha-narla"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all"
+                  className="flex items-center gap-2 p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all text-xs font-mono"
                   aria-label="LinkedIn Profile"
                   id="contact-social-linkedin"
                 >
-                  <Linkedin className="w-6 h-6" />
+                  <Linkedin className="w-5 h-5" /> LinkedIn
+                </a>
+                <a
+                  href="https://leetcode.com/u/Srivarshitha-Narla/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all text-xs font-mono"
+                  aria-label="LeetCode Profile"
+                  id="contact-social-leetcode"
+                >
+                  <Brain className="w-5 h-5 text-yellow-500/80" /> LeetCode
+                </a>
+                <a
+                  href="https://www.codechef.com/users/srivarshitha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all text-xs font-mono"
+                  aria-label="CodeChef Profile"
+                  id="contact-social-codechef"
+                >
+                  <Trophy className="w-5 h-5 text-amber-500/80" /> CodeChef
                 </a>
               </div>
             </div>

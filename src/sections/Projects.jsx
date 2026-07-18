@@ -3,24 +3,24 @@ import ProjectCard from '../components/ProjectCard';
 
 const projectsList = [
   {
-    title: "Aetherial Wallet Tracker",
-    description: "A multi-chain crypto wallet and portfolio analysis dashboard that pulls real-time transactions, calculates cumulative net worth, and renders interactive performance charts.",
-    tags: ["React", "Tailwind CSS", "Framer Motion", "Chart.js", "Ethers.js"],
-    github: "https://github.com/Srivarshitha-Narla/aetherial-wallet-tracker",
-    demo: "https://aetherial-wallet-tracker.vercel.app"
+    title: "Schedule, Track and Pay with EASE",
+    description: "Designed and developed a clean and modern website to streamline the student fee process. Reduced average waiting time through real-time queue tracking and waiting time estimation.",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "GitHub Actions"],
+    github: "https://github.com/Srivarshitha-Narla/Schedule-Track-and-Pay-with-EASE",
+    demo: "https://srivarshitha-narla.github.io/Schedule-Track-and-Pay-with-EASE"
   },
   {
-    title: "Insightful News Portal Audit",
-    description: "A automated web audit system analyzing Core Web Vitals, performance indicators, and accessibility compliance scores. Visualizes benchmark comparison charts for web optimization.",
-    tags: ["React", "Vite", "Lighthouse API", "Tailwind CSS", "Recharts"],
-    github: "https://github.com/Srivarshitha-Narla/news-portal-audit",
-    demo: "https://news-portal-audit.vercel.app"
+    title: "Abstracting Cloud Services for Hospital Website",
+    description: "A confidential patient data management system using AWS cloud services. Configured IAM policies and private VPC setups for secure patient data access and storage in RDS & S3.",
+    tags: ["AWS", "RDS", "S3", "IAM", "VPC", "Secure Data"],
+    github: "https://github.com/Srivarshitha-Narla/Cloud-Services-for-Hospital-Website",
+    demo: null
   },
   {
-    title: "Synapse Anomaly Detector",
-    description: "A real-time network transaction monitoring application leveraging predictive analytics to flag security anomalies, featuring active live logs and detailed filter controls.",
-    tags: ["React", "Node.js", "Express", "D3.js", "Tailwind CSS"],
-    github: "https://github.com/Srivarshitha-Narla/synapse-anomaly-detector",
+    title: "FitTrack: React Native Activity Tracker",
+    description: "A cross-platform mobile application designed to log daily habits, track workouts, and sync statistics via secure REST APIs, using Redux and Material UI for a polished layout.",
+    tags: ["React Native", "Redux", "Material UI", "REST APIs", "Node.js"],
+    github: "https://github.com/Srivarshitha-Narla/React-Native-FitTrack",
     demo: null
   }
 ];
@@ -39,7 +39,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-slate-400 max-w-lg font-light text-sm sm:text-base">
-            A curated selection of applications I've built, focusing on clean engineering, responsiveness, and polished interactive experiences.
+            A selection of web systems and mobile applications I've built, showcasing clean code structure and cloud configurations.
           </p>
           <div className="w-12 h-1 bg-purple-500 rounded-full mt-4"></div>
         </div>

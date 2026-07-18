@@ -1,42 +1,42 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Server, Wrench, ShieldCheck, Sparkles } from 'lucide-react';
+import { Code2, Server, Wrench, ShieldCheck } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: "Frontend Development",
+    title: "Languages & Libraries",
     icon: <Code2 className="w-5 h-5 text-purple-400" />,
     skills: [
-      { name: "React", level: 92 },
-      { name: "Next.js", level: 88 },
-      { name: "JavaScript (ES6+)", level: 95 },
-      { name: "HTML5 / CSS3", level: 98 },
-      { name: "Tailwind CSS", level: 94 },
-      { name: "Framer Motion", level: 85 }
+      { name: "JavaScript (ES6+)", level: 90 },
+      { name: "HTML5 / CSS3", level: 95 },
+      { name: "PHP", level: 85 },
+      { name: "Java", level: 80 },
+      { name: "Python", level: 75 },
+      { name: "Redux & Material UI", level: 85 }
     ]
   },
   {
-    title: "Backend & Databases",
+    title: "Frameworks & Databases",
     icon: <Server className="w-5 h-5 text-indigo-400" />,
     skills: [
-      { name: "Node.js", level: 85 },
-      { name: "Express", level: 88 },
-      { name: "REST APIs", level: 92 },
-      { name: "PostgreSQL", level: 80 },
-      { name: "MongoDB", level: 82 },
-      { name: "GraphQL", level: 75 }
+      { name: "React.js", level: 90 },
+      { name: "React Native", level: 85 },
+      { name: "Node.js & Express", level: 80 },
+      { name: "Angular", level: 75 },
+      { name: "MongoDB", level: 88 },
+      { name: "PostgreSQL", level: 82 }
     ]
   },
   {
-    title: "Tools & Platforms",
+    title: "Developer Tools & Cloud",
     icon: <Wrench className="w-5 h-5 text-pink-400" />,
     skills: [
       { name: "Git & GitHub", level: 90 },
-      { name: "Vercel / Netlify", level: 92 },
-      { name: "Vite", level: 94 },
-      { name: "Docker", level: 70 },
-      { name: "Postman", level: 88 },
-      { name: "Figma", level: 80 }
+      { name: "Visual Studio Code", level: 95 },
+      { name: "AWS Cloud (S3, RDS)", level: 80 },
+      { name: "IAM & VPC Configuration", level: 75 },
+      { name: "CI/CD & GitHub Actions", level: 75 },
+      { name: "REST APIs", level: 88 }
     ]
   }
 ];
@@ -46,7 +46,7 @@ export default function Skills() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.08
       }
     }
   };
@@ -64,7 +64,7 @@ export default function Skills() {
     hidden: { width: 0 },
     visible: (level) => ({
       width: `${level}%`,
-      transition: { duration: 1.2, ease: [0.25, 1, 0.5, 1], delay: 0.2 }
+      transition: { duration: 1.2, ease: [0.25, 1, 0.5, 1], delay: 0.15 }
     })
   };
 
@@ -78,10 +78,10 @@ export default function Skills() {
         {/* Section Heading */}
         <div className="flex flex-col items-center mb-16 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-white mb-4">
-            Technical Stack
+            Technical Skills
           </h2>
           <p className="text-slate-400 max-w-lg font-light text-sm sm:text-base">
-            A visual overview of the tools, frameworks, and languages I use to bring ideas to life.
+            An overview of the programming languages, frameworks, databases, and DevOps tools in my stack.
           </p>
           <div className="w-12 h-1 bg-purple-500 rounded-full mt-4"></div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { User, BookOpen, Terminal, Shield } from 'lucide-react';
+import { User, BookOpen, Terminal, Shield, Award, Briefcase } from 'lucide-react';
 import avatarImg from '../assets/avatar.webp';
 
 export default function About() {
@@ -35,19 +35,19 @@ export default function About() {
 
   const highlights = [
     {
-      icon: <Terminal className="w-5 h-5 text-purple-400" />,
-      title: "Frontend Stack",
-      desc: "React, Vite, Next.js, Tailwind CSS, Framer Motion"
+      icon: <Briefcase className="w-5 h-5 text-purple-400" />,
+      title: "Internships",
+      desc: "React Native Intern at Technical Hub & AWS Intern at APSSDC"
     },
     {
       icon: <BookOpen className="w-5 h-5 text-indigo-400" />,
-      title: "Current Learning",
-      desc: "Agentic AI workflows, WebGL, and high-performance rendering"
+      title: "Education",
+      desc: "B.Sc Computer Science (94%) & Diploma in Networking (9.0 CGPA)"
     },
     {
-      icon: <Shield className="w-5 h-5 text-pink-400" />,
-      title: "Core Philosophy",
-      desc: "Writing accessible, highly semantic, and responsive code"
+      icon: <Award className="w-5 h-5 text-pink-400" />,
+      title: "Certifications",
+      desc: "MongoDB Certified, GitHub Foundations, Cisco IT, Certiport FrontEnd"
     }
   ];
 
@@ -68,7 +68,7 @@ export default function About() {
         {/* Core Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Left Column: Avatar Display */}
+          {/* Left Column: Profile Picture */}
           <motion.div 
             variants={imageVariants}
             initial="hidden"
@@ -87,7 +87,7 @@ export default function About() {
               <div className="relative h-full w-full rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 flex items-center justify-center">
                 <img 
                   src={avatarImg} 
-                  alt="Srivarshitha Narla" 
+                  alt="Narla Sri Varshitha" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
@@ -98,7 +98,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Right Column: Bio Details */}
+          {/* Right Column: Bio & Career Details */}
           <motion.div 
             variants={textVariants}
             initial="hidden"
@@ -113,13 +113,13 @@ export default function About() {
             
             <div className="space-y-6 text-slate-300 font-sans font-light leading-relaxed text-base sm:text-lg">
               <p>
-                I am a frontend-focused full-stack developer with a passion for building interactive, performant web applications. My coding journey is driven by a curiosity to solve complex problems and turn them into elegant user experiences.
+                I am a frontend-focused **Full Stack Developer** based in Vendra, Andhra Pradesh, India. I am passionate about hands-on technology work in React Native, React, JavaScript, and modern web architectures to deliver user-centric experiences.
               </p>
               <p>
-                I specialize in modern JavaScript/React workflows, responsive styling systems, and fluid motion design. My objective is always to deliver software that is not only visually stunning but also highly accessible and optimized for fast page loads.
+                Currently, I am working as a **React Native Developer Intern** at **Technical Hub Pvt Ltd**, where I design dynamic websites and develop mobile applications. In addition, I spent time gaining fundamental skills in DevOps, CI/CD, and AWS infrastructure as an **AWS Cloud Computing Intern** with APSSDC.
               </p>
               <p>
-                Currently, I'm diving deeper into agentic AI system architectures and high-efficiency rendering techniques. When I am not writing code, I enjoy exploring new user interface design patterns, analyzing page metrics, and contributing to open-source tools.
+                Academically, I am pursuing my **Bachelor of Science in Computer Science** (Lateral Entry after Diploma) at Aditya College of Engineering and Technology with a score of 94%, following a Diploma in Computer Networking where I secured a CGPA of 9.0.
               </p>
             </div>
 
