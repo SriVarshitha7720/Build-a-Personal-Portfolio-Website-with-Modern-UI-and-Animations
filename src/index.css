@@ -7,7 +7,7 @@
 }
 
 /* Set up class-based dark mode variant for Tailwind v4 */
-@variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   html {
