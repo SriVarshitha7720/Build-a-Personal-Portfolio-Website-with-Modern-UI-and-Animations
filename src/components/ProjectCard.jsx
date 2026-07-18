@@ -129,7 +129,7 @@ export default function ProjectCard({ project, index }) {
             <h3 className="text-xl font-bold font-display text-slate-800 dark:text-white mb-2 group-hover:text-[#f0a202] transition-colors">
               {title}
             </h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 font-sans font-light">
+            <p className="text-slate-500 dark:text-slate-300 text-sm leading-relaxed mb-6 font-sans font-light">
               {description}
             </p>
           </div>
@@ -153,7 +153,7 @@ export default function ProjectCard({ project, index }) {
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-[#f0a202] transition-colors"
+                className="flex items-center gap-1.5 text-slate-500 dark:text-slate-300 hover:text-[#f0a202] transition-colors"
               >
                 <Github className="w-4 h-4" /> Code
               </a>
@@ -162,7 +162,7 @@ export default function ProjectCard({ project, index }) {
                   href={demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-[#f0a202] transition-colors"
+                  className="flex items-center gap-1.5 text-slate-500 dark:text-slate-300 hover:text-[#f0a202] transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" /> Live Demo
                 </a>

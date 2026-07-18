@@ -99,7 +99,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white">
                 Let's chat.
               </h3>
-              <p className="text-slate-605 dark:text-slate-400 font-sans font-light leading-relaxed text-sm sm:text-base">
+              <p className="text-slate-600 dark:text-slate-400 font-sans font-light leading-relaxed text-sm sm:text-base">
                 Whether you're looking to hire a developer, build a custom application, or discuss mobile app ideas, my inbox is always open.
               </p>
 
@@ -215,7 +215,7 @@ export default function Contact() {
                     id="contact-form"
                   >
                     <div>
-                      <label htmlFor="form-name" className="block text-xs font-semibold text-slate-505 dark:text-slate-400 uppercase tracking-wider mb-2 font-sans">
+                      <label htmlFor="form-name" className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2 font-sans">
                         Your Name
                       </label>
                       <input
@@ -231,7 +231,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="form-email" className="block text-xs font-semibold text-slate-505 dark:text-slate-400 uppercase tracking-wider mb-2 font-sans">
+                      <label htmlFor="form-email" className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2 font-sans">
                         Your Email
                       </label>
                       <input
@@ -247,7 +247,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="form-message" className="block text-xs font-semibold text-slate-505 dark:text-slate-400 uppercase tracking-wider mb-2 font-sans">
+                      <label htmlFor="form-message" className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2 font-sans">
                         Your Message
                       </label>
                       <textarea

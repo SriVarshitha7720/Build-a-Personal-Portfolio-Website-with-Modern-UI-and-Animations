@@ -83,7 +83,7 @@ export default function Skills() {
           <span className="text-[#f0a202] font-mono text-xs uppercase tracking-widest font-semibold mb-2 block">
             — Skills
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-955 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-950 dark:text-white mb-4">
             Technical Stack
           </h2>
           <p className="text-slate-500 dark:text-slate-400 max-w-lg font-light text-sm sm:text-base">
@@ -126,7 +126,7 @@ export default function Skills() {
                     </div>
                     
                     {/* Progress Bar Container */}
-                    <div className="h-2 w-full rounded-full bg-slate-200/50 dark:bg-slate-800/40 overflow-hidden border border-slate-200/40 dark:border-slate-850/40">
+                    <div className="h-2 w-full rounded-full bg-slate-200/50 dark:bg-slate-800/40 overflow-hidden border border-slate-200/40 dark:border-slate-800/40">
                       {/* Animated inner bar */}
                       <motion.div
                         custom={skill.level}

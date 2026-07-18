@@ -41,7 +41,7 @@ export default function Projects() {
           <p className="text-slate-500 dark:text-slate-400 max-w-lg font-light text-sm sm:text-base">
             A selection of web systems and mobile applications I've built, showcasing clean code structure and cloud configurations.
           </p>
-          <div className="w-12 h-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-4"></div>
+          <div className="w-12 h-1 bg-gradient-to-r from-[#264933] to-[#f0a202] rounded-full mt-4"></div>
         </div>
 
         {/* Project Grid */}

@@ -72,7 +72,7 @@ export default function About() {
             </h2>
             
             {/* Story text */}
-            <div className="space-y-6 text-slate-205 font-sans font-light leading-relaxed text-sm sm:text-base opacity-90">
+            <div className="space-y-6 text-slate-200 font-sans font-light leading-relaxed text-sm sm:text-base opacity-90">
               <p>
                 I am a frontend-focused <strong className="text-white font-medium">Full Stack Developer</strong> based in India. I am passionate about hands-on technology work in React Native, React, JavaScript, and modern web architectures to deliver user-centric experiences.
               </p>
