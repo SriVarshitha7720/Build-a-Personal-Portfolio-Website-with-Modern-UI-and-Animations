@@ -9,7 +9,7 @@ import Footer from './sections/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-purple-500 selection:text-white">
+    <div className="min-h-screen flex flex-col font-sans selection:bg-[#f0a202] selection:text-slate-950 transition-colors duration-300">
       {/* Floating Header */}
       <Navbar />
 
