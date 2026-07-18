@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
-import { ExternalLink, Code } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const Github = ({ className = "w-5 h-5" }) => (
   <svg
@@ -24,7 +24,6 @@ export default function ProjectCard({ project, index }) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  // Map mouse offsets to tilt angles (max 8 degrees tilt for subtle effect)
   const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [8, -8]), { stiffness: 200, damping: 25 });
   const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-8, 8]), { stiffness: 200, damping: 25 });
 
@@ -33,7 +32,6 @@ export default function ProjectCard({ project, index }) {
     const width = rect.width;
     const height = rect.height;
     
-    // Normalize coordinates from -0.5 to 0.5
     const xVal = (e.clientX - rect.left) / width - 0.5;
     const yVal = (e.clientY - rect.top) / height - 0.5;
     
@@ -46,7 +44,6 @@ export default function ProjectCard({ project, index }) {
     mouseY.set(0);
   };
 
-  // Base entry animation variants
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
     visible: { 
@@ -66,46 +63,46 @@ export default function ProjectCard({ project, index }) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
-      className="perspective-1000"
+      className="perspective-1000 animate-card"
     >
       <motion.div
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        className="glass-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-purple-300/40 hover:shadow-xl hover:shadow-purple-100/30 transition-all duration-300"
+        className="glass-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-[#f0a202]/30 hover:shadow-xl hover:shadow-emerald-100/10 dark:hover:shadow-[#0c1610]/30 transition-all duration-300"
       >
         {/* Mock Graphic Area */}
-        <div className="relative h-48 bg-gradient-to-br from-purple-50 via-indigo-50/50 to-pink-50 border-b border-purple-100/50 flex items-center justify-center overflow-hidden">
-          {/* Pastel grid mesh */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#e0e7ff_1px,transparent_1px),linear-gradient(to_bottom,#e0e7ff_1px,transparent_1px)] bg-[size:1.25rem_1.25rem] opacity-40"></div>
+        <div className="relative h-48 bg-gradient-to-br from-emerald-50 via-slate-50 to-amber-50 dark:from-[#122619] dark:via-[#0c1610] dark:to-amber-950/10 border-b border-[#264933]/10 dark:border-white/5 flex items-center justify-center overflow-hidden">
+          {/* Grid pattern */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:1.25rem_1.25rem] opacity-50"></div>
           
-          {/* Soft glowing pastels */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-purple-200/40 rounded-full blur-2xl group-hover:bg-purple-300/55 transition-all duration-500"></div>
-          <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-pink-200/40 rounded-full blur-xl group-hover:bg-pink-300/50 transition-all duration-500"></div>
+          {/* Soft background glows */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[#f0a202]/10 rounded-full blur-2xl group-hover:bg-[#f0a202]/20 transition-all duration-500"></div>
+          <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-emerald-100/30 dark:bg-emerald-950/30 rounded-full blur-xl group-hover:bg-emerald-100/50 dark:group-hover:bg-emerald-950/50 transition-all duration-500"></div>
 
           {/* Interactive mock code block */}
-          <div className="relative bg-white/70 backdrop-blur-md p-4 rounded-xl w-[85%] h-[75%] border border-white flex flex-col justify-between shadow-md transform group-hover:scale-[1.03] group-hover:-translate-y-1 transition-all duration-500">
-            <div className="flex items-center gap-1.5 border-b border-slate-100 pb-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-rose-300/80"></span>
-              <span className="w-2.5 h-2.5 rounded-full bg-amber-300/80"></span>
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-300/80"></span>
-              <span className="text-[10px] text-slate-400 font-mono ml-2">app.js</span>
+          <div className="relative bg-white/80 dark:bg-[#0c1610]/75 backdrop-blur-md p-4 rounded-xl w-[85%] h-[75%] border border-white/50 dark:border-white/5 flex flex-col justify-between shadow-md transform group-hover:scale-[1.03] group-hover:-translate-y-1 transition-all duration-500">
+            <div className="flex items-center gap-1.5 border-b border-slate-100 dark:border-white/5 pb-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#f0a202]/70"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[#264933]/70"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+              <span className="text-[10px] text-slate-400 font-mono ml-2">source.js</span>
             </div>
-            <div className="flex-1 flex flex-col justify-center font-mono text-[10px] space-y-1 text-slate-600 select-none">
-              <p className="text-purple-600"><span className="text-indigo-600">const</span> init = () =&gt; &#123;</p>
-              <p className="pl-3 text-slate-700 font-medium">console.log(<span className="text-pink-500">"{title.split(':')[0]}"</span>);</p>
+            <div className="flex-1 flex flex-col justify-center font-mono text-[10px] space-y-1 text-slate-600 dark:text-slate-400 select-none">
+              <p className="text-emerald-600 dark:text-emerald-400"><span className="text-[#264933] dark:text-[#f0a202]">const</span> project = () =&gt; &#123;</p>
+              <p className="pl-3 text-slate-700 dark:text-slate-200 font-medium">title: <span className="text-[#f0a202]">"{title.split(':')[0]}"</span>,</p>
               <p className="pl-3 text-slate-400">// {tags.slice(0, 3).join(' / ')}</p>
-              <p className="text-purple-600">&#125;</p>
+              <p className="text-emerald-600 dark:text-emerald-400">&#125;</p>
             </div>
           </div>
 
           {/* Hover overlay link panel */}
-          <div className="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 inset-0 bg-white/35 backdrop-blur-[2px] flex items-center justify-center gap-4">
+          <div className="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 inset-0 bg-[#264933]/20 dark:bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center gap-4">
             <a
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white border border-purple-100 hover:border-purple-300 rounded-full text-purple-600 hover:text-purple-700 transition-all shadow-md hover:scale-115"
+              className="p-3 bg-white hover:bg-slate-50 border border-slate-100 rounded-full text-[#264933] hover:text-[#f0a202] transition-all shadow-md hover:scale-115"
               title="View Source Code"
               aria-label={`View GitHub repository for ${title}`}
             >
@@ -116,7 +113,7 @@ export default function ProjectCard({ project, index }) {
                 href={demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white border border-purple-100 hover:border-purple-300 rounded-full text-purple-600 hover:text-purple-700 transition-all shadow-md hover:scale-115"
+                className="p-3 bg-white hover:bg-slate-50 border border-slate-100 rounded-full text-[#264933] hover:text-[#f0a202] transition-all shadow-md hover:scale-115"
                 title="View Live Demo"
                 aria-label={`View live demo for ${title}`}
               >
@@ -129,21 +126,21 @@ export default function ProjectCard({ project, index }) {
         {/* Card Content Details */}
         <div className="p-6 flex-1 flex flex-col justify-between text-left">
           <div>
-            <h3 className="text-xl font-bold font-display text-slate-800 mb-2 group-hover:text-purple-600 transition-colors">
+            <h3 className="text-xl font-bold font-display text-slate-800 dark:text-white mb-2 group-hover:text-[#f0a202] transition-colors">
               {title}
             </h3>
-            <p className="text-slate-500 text-sm leading-relaxed mb-6 font-sans font-light">
+            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 font-sans font-light">
               {description}
             </p>
           </div>
 
           <div>
-            {/* Soft Pastel Tags */}
+            {/* Soft Green/Gold Tags */}
             <div className="flex flex-wrap gap-1.5 mb-6">
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded-md border border-purple-100/60 bg-purple-50/40 text-purple-600"
+                  className="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded-md border border-emerald-100/50 dark:border-[#223d2b] bg-emerald-50/40 dark:bg-[#122619] text-[#264933] dark:text-[#f0a202]"
                 >
                   {tag}
                 </span>
@@ -151,12 +148,12 @@ export default function ProjectCard({ project, index }) {
             </div>
 
             {/* Links for accessibility/touch devices */}
-            <div className="flex items-center gap-4 pt-4 border-t border-slate-100 text-xs font-mono">
+            <div className="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-900 text-xs font-mono">
               <a
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-slate-500 hover:text-purple-600 transition-colors"
+                className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-[#f0a202] transition-colors"
               >
                 <Github className="w-4 h-4" /> Code
               </a>
@@ -165,7 +162,7 @@ export default function ProjectCard({ project, index }) {
                   href={demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-slate-500 hover:text-purple-600 transition-colors"
+                  className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-[#f0a202] transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" /> Live Demo
                 </a>

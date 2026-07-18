@@ -5,8 +5,8 @@ import { Code2, Server, Wrench, ShieldCheck } from 'lucide-react';
 const skillCategories = [
   {
     title: "Languages & Libraries",
-    icon: <Code2 className="w-5 h-5 text-purple-500" />,
-    iconBg: "bg-purple-50 border-purple-100",
+    icon: <Code2 className="w-5 h-5 text-[#264933] dark:text-[#f0a202]" />,
+    iconBg: "bg-emerald-50 dark:bg-[#122619] border-emerald-100 dark:border-[#223d2b]",
     skills: [
       { name: "JavaScript (ES6+)", level: 90 },
       { name: "HTML5 / CSS3", level: 95 },
@@ -18,8 +18,8 @@ const skillCategories = [
   },
   {
     title: "Frameworks & Databases",
-    icon: <Server className="w-5 h-5 text-indigo-500" />,
-    iconBg: "bg-indigo-50 border-indigo-100",
+    icon: <Server className="w-5 h-5 text-[#264933] dark:text-[#f0a202]" />,
+    iconBg: "bg-emerald-50 dark:bg-[#122619] border-emerald-100 dark:border-[#223d2b]",
     skills: [
       { name: "React.js", level: 90 },
       { name: "React Native", level: 85 },
@@ -31,8 +31,8 @@ const skillCategories = [
   },
   {
     title: "Developer Tools & Cloud",
-    icon: <Wrench className="w-5 h-5 text-pink-500" />,
-    iconBg: "bg-pink-50 border-pink-100",
+    icon: <Wrench className="w-5 h-5 text-[#264933] dark:text-[#f0a202]" />,
+    iconBg: "bg-emerald-50 dark:bg-[#122619] border-emerald-100 dark:border-[#223d2b]",
     skills: [
       { name: "Git & GitHub", level: 90 },
       { name: "Visual Studio Code", level: 95 },
@@ -74,19 +74,22 @@ export default function Skills() {
   return (
     <section id="skills" className="relative py-24 px-6 bg-slate-50/10">
       {/* Background decoration */}
-      <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-blue-100/35 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-emerald-50/10 dark:bg-[#122619]/10 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto">
         
         {/* Section Heading */}
         <div className="flex flex-col items-center mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-950 dark:text-white mb-4">
-            Technical Skills
+          <span className="text-[#f0a202] font-mono text-xs uppercase tracking-widest font-semibold mb-2 block">
+            — Skills
+          </span>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-955 dark:text-white mb-4">
+            Technical Stack
           </h2>
-          <p className="text-slate-550 dark:text-slate-400 max-w-lg font-light text-sm sm:text-base">
+          <p className="text-slate-500 dark:text-slate-400 max-w-lg font-light text-sm sm:text-base">
             An overview of the programming languages, frameworks, databases, and DevOps tools in my stack.
           </p>
-          <div className="w-12 h-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-4"></div>
+          <div className="w-12 h-1 bg-gradient-to-r from-[#264933] to-[#f0a202] rounded-full mt-4"></div>
         </div>
 
         {/* Categories Grid */}
@@ -105,7 +108,7 @@ export default function Skills() {
             >
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100 dark:border-slate-800/80">
-                <div className={`p-2.5 rounded-xl border ${category.iconBg} dark:bg-slate-900/60 dark:border-slate-800`}>
+                <div className={`p-2.5 rounded-xl border ${category.iconBg}`}>
                   {category.icon}
                 </div>
                 <h3 className="font-bold text-lg font-display text-slate-900 dark:text-white">
@@ -119,7 +122,7 @@ export default function Skills() {
                   <div key={skill.name} className="space-y-2 text-left">
                     <div className="flex items-center justify-between text-sm">
                       <span className="font-medium text-slate-700 dark:text-slate-300">{skill.name}</span>
-                      <span className="font-mono text-xs text-purple-600 dark:text-purple-400 font-semibold">{skill.level}%</span>
+                      <span className="font-mono text-xs text-[#f0a202] font-semibold">{skill.level}%</span>
                     </div>
                     
                     {/* Progress Bar Container */}
@@ -128,7 +131,7 @@ export default function Skills() {
                       <motion.div
                         custom={skill.level}
                         variants={barVariants}
-                        className="h-full rounded-full bg-gradient-to-r from-purple-400 via-indigo-400 to-pink-400"
+                        className="h-full rounded-full bg-gradient-to-r from-[#264933] via-emerald-600 to-[#f0a202]"
                       />
                     </div>
                   </div>
