@@ -6,21 +6,21 @@ const projectsList = [
     title: "Schedule, Track and Pay with EASE",
     description: "Designed and developed a clean and modern website to streamline the student fee process. Reduced average waiting time through real-time queue tracking and waiting time estimation.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "GitHub Actions"],
-    github: "https://github.com/Srivarshitha-Narla/Schedule-Track-and-Pay-with-EASE",
-    demo: "https://srivarshitha-narla.github.io/Schedule-Track-and-Pay-with-EASE"
+    github: "https://github.com/SriVarshitha7720/Schedule-Track-and-Pay-with-EASE",
+    demo: "https://srivarshitha7720.github.io/Schedule-Track-and-Pay-with-EASE"
   },
   {
     title: "Abstracting Cloud Services for Hospital Website",
     description: "A confidential patient data management system using AWS cloud services. Configured IAM policies and private VPC setups for secure patient data access and storage in RDS & S3.",
     tags: ["AWS", "RDS", "S3", "IAM", "VPC", "Secure Data"],
-    github: "https://github.com/Srivarshitha-Narla/Cloud-Services-for-Hospital-Website",
+    github: "https://github.com/SriVarshitha7720/Cloud-Services-for-Hospital-Website",
     demo: null
   },
   {
     title: "FitTrack: React Native Activity Tracker",
     description: "A cross-platform mobile application designed to log daily habits, track workouts, and sync statistics via secure REST APIs, using Redux and Material UI for a polished layout.",
     tags: ["React Native", "Redux", "Material UI", "REST APIs", "Node.js"],
-    github: "https://github.com/Srivarshitha-Narla/React-Native-FitTrack",
+    github: "https://github.com/SriVarshitha7720/React-Native-FitTrack",
     demo: null
   }
 ];

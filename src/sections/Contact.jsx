@@ -125,7 +125,7 @@ export default function Contact() {
               </h4>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://github.com/Srivarshitha-Narla"
+                  href="https://github.com/SriVarshitha7720"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-purple-200 dark:hover:border-purple-900/60 hover:text-purple-600 dark:hover:text-purple-400 rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"
@@ -135,7 +135,7 @@ export default function Contact() {
                   <Github className="w-5 h-5" /> GitHub
                 </a>
                 <a
-                  href="https://linkedin.com/in/srivarshitha-narla"
+                  href="https://www.linkedin.com/in/srivarshithanarla"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-purple-200 dark:hover:border-purple-900/60 hover:text-purple-600 dark:hover:text-purple-400 rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"
@@ -145,7 +145,7 @@ export default function Contact() {
                   <Linkedin className="w-5 h-5" /> LinkedIn
                 </a>
                 <a
-                  href="https://leetcode.com/u/Srivarshitha-Narla/"
+                  href="https://leetcode.com/u/SriVarshitha2005/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-purple-200 dark:hover:border-purple-900/60 hover:text-purple-600 dark:hover:text-purple-400 rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"
@@ -155,7 +155,7 @@ export default function Contact() {
                   <Brain className="w-5 h-5 text-amber-500" /> LeetCode
                 </a>
                 <a
-                  href="https://www.codechef.com/users/srivarshitha"
+                  href="https://www.codechef.com/users/nsrivarshitha"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-purple-200 dark:hover:border-purple-900/60 hover:text-purple-600 dark:hover:text-purple-400 rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"

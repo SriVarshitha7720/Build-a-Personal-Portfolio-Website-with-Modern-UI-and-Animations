@@ -6,8 +6,8 @@ A premium, highly interactive, and fully responsive personal portfolio website d
 
 - **Developer**: Srivarshitha Narla
 - **Project Role**: Frontend / Full-Stack Software Developer
-- **Live Deployed Site**: [srivarshitha-narla-portfolio.vercel.app](https://srivarshitha-narla-portfolio.vercel.app)
-- **Source Code**: [GitHub Repository](https://github.com/Srivarshitha-Narla/personal-portfolio)
+- **Live Deployed Site**: [srivarshitha7720-portfolio.vercel.app](https://srivarshitha7720-portfolio.vercel.app)
+- **Source Code**: [GitHub Repository](https://github.com/SriVarshitha7720/personal-portfolio)
 
 ---
 
