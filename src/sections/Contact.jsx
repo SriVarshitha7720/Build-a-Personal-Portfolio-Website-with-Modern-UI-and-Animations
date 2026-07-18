@@ -65,20 +65,20 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-24 px-6 overflow-hidden">
+    <section id="contact" className="relative py-24 px-6 overflow-hidden bg-slate-50/50 dark:bg-slate-950/20">
       {/* Background decoration */}
-      <div className="absolute top-1/2 left-1/4 w-[350px] h-[350px] bg-pink-500/5 rounded-full blur-[110px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/4 w-[350px] h-[350px] bg-pink-100/30 rounded-full blur-[110px] pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="flex flex-col items-center mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-955 dark:text-white mb-4">
             Get In Touch
           </h2>
-          <p className="text-slate-400 max-w-lg font-light text-sm sm:text-base">
+          <p className="text-slate-500 dark:text-slate-400 max-w-lg font-light text-sm sm:text-base">
             Have a question, project proposal, or just want to say hi? Drop me a line and I'll get back to you soon.
           </p>
-          <div className="w-12 h-1 bg-purple-500 rounded-full mt-4"></div>
+          <div className="w-12 h-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-4"></div>
         </div>
 
         {/* 2-Column Grid */}
@@ -90,28 +90,28 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-5 flex flex-col justify-between"
+            className="lg:col-span-5 flex flex-col justify-between text-left"
           >
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold font-display text-white">
+              <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white">
                 Let's chat.
               </h3>
-              <p className="text-slate-300 font-sans font-light leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 font-sans font-light leading-relaxed">
                 Whether you're looking to hire a developer, build a custom application, or discuss mobile app ideas, my inbox is always open.
               </p>
 
               {/* Direct Mail Card */}
               <a 
                 href="mailto:narlasrivarshitha@gmail.com"
-                className="flex items-center gap-4 p-4 rounded-xl border border-slate-900 bg-slate-950/40 hover:border-slate-800 transition-colors group cursor-pointer"
+                className="flex items-center gap-4 p-4 rounded-xl border border-slate-200/60 dark:border-slate-800 bg-white/40 dark:bg-slate-900/30 hover:border-purple-200 dark:hover:border-purple-500/30 hover:bg-white/70 dark:hover:bg-slate-900/50 transition-all group cursor-pointer shadow-sm"
                 id="contact-email-link"
               >
-                <div className="p-3 rounded-lg bg-slate-900 border border-slate-850 group-hover:bg-purple-950/20 group-hover:border-purple-500/40 transition-colors">
-                  <Mail className="w-6 h-6 text-purple-400" />
+                <div className="p-3 rounded-lg bg-purple-50 dark:bg-purple-950/20 border border-purple-100 dark:border-purple-900/40 group-hover:bg-purple-100/60 dark:group-hover:bg-purple-950/40 transition-colors">
+                  <Mail className="w-6 h-6 text-purple-500" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sm text-slate-400">Direct Email</h4>
-                  <p className="text-base text-white font-mono group-hover:text-purple-400 transition-colors">
+                  <h4 className="font-semibold text-sm text-slate-405 dark:text-slate-500">Direct Email</h4>
+                  <p className="text-base text-slate-800 dark:text-slate-200 font-mono group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                     narlasrivarshitha@gmail.com
                   </p>
                 </div>
@@ -120,7 +120,7 @@ export default function Contact() {
 
             {/* Social profiles list */}
             <div className="mt-12 lg:mt-0">
-              <h4 className="font-mono text-xs uppercase tracking-wider text-slate-500 mb-4">
+              <h4 className="font-mono text-xs uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-4 font-semibold">
                 Find Me On
               </h4>
               <div className="flex flex-wrap gap-4">
@@ -128,7 +128,7 @@ export default function Contact() {
                   href="https://github.com/Srivarshitha-Narla"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all text-xs font-mono"
+                  className="flex items-center gap-2 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-purple-200 dark:hover:border-purple-900/60 hover:text-purple-600 dark:hover:text-purple-400 rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"
                   aria-label="GitHub Profile"
                   id="contact-social-github"
                 >
@@ -138,7 +138,7 @@ export default function Contact() {
                   href="https://linkedin.com/in/srivarshitha-narla"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all text-xs font-mono"
+                  className="flex items-center gap-2 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-purple-200 dark:hover:border-purple-900/60 hover:text-purple-600 dark:hover:text-purple-400 rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"
                   aria-label="LinkedIn Profile"
                   id="contact-social-linkedin"
                 >
@@ -148,21 +148,21 @@ export default function Contact() {
                   href="https://leetcode.com/u/Srivarshitha-Narla/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all text-xs font-mono"
+                  className="flex items-center gap-2 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-purple-200 dark:hover:border-purple-900/60 hover:text-purple-600 dark:hover:text-purple-400 rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"
                   aria-label="LeetCode Profile"
                   id="contact-social-leetcode"
                 >
-                  <Brain className="w-5 h-5 text-yellow-500/80" /> LeetCode
+                  <Brain className="w-5 h-5 text-amber-500" /> LeetCode
                 </a>
                 <a
                   href="https://www.codechef.com/users/srivarshitha"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-3 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl text-slate-400 hover:text-white hover:-translate-y-1 transition-all text-xs font-mono"
+                  className="flex items-center gap-2 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-purple-200 dark:hover:border-purple-900/60 hover:text-purple-600 dark:hover:text-purple-400 rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"
                   aria-label="CodeChef Profile"
                   id="contact-social-codechef"
                 >
-                  <Trophy className="w-5 h-5 text-amber-500/80" /> CodeChef
+                  <Trophy className="w-5 h-5 text-yellow-650" /> CodeChef
                 </a>
               </div>
             </div>
@@ -187,14 +187,14 @@ export default function Contact() {
                     className="text-center py-12 flex flex-col items-center justify-center"
                     key="success"
                   >
-                    <CheckCircle2 className="w-16 h-16 text-emerald-400 mb-6 animate-pulse" />
-                    <h3 className="text-2xl font-bold font-display text-white mb-2">Message Sent!</h3>
-                    <p className="text-slate-400 max-w-sm text-sm">
+                    <CheckCircle2 className="w-16 h-16 text-emerald-500 mb-6 animate-pulse" />
+                    <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white mb-2">Message Sent!</h3>
+                    <p className="text-slate-500 dark:text-slate-400 max-w-sm text-sm font-light">
                       Thank you for reaching out. I've received your message and will get back to you shortly.
                     </p>
                     <button
                       onClick={() => setStatus('idle')}
-                      className="mt-6 flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-purple-400 hover:text-purple-300 transition-colors cursor-pointer"
+                      className="mt-6 flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-purple-500 hover:text-purple-650 transition-colors cursor-pointer"
                     >
                       Send Another Message
                       <ArrowRight className="w-4 h-4" />
@@ -212,7 +212,7 @@ export default function Contact() {
                     id="contact-form"
                   >
                     <div>
-                      <label htmlFor="form-name" className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+                      <label htmlFor="form-name" className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
                         Your Name
                       </label>
                       <input
@@ -222,13 +222,13 @@ export default function Contact() {
                         value={formState.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl bg-slate-900/60 border border-slate-800 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 text-white font-sans text-sm outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-white focus:border-purple-400 focus:ring-1 focus:ring-purple-200 text-sm outline-none transition-all"
                         placeholder="John Doe"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="form-email" className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+                      <label htmlFor="form-email" className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
                         Your Email
                       </label>
                       <input
@@ -238,13 +238,13 @@ export default function Contact() {
                         value={formState.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl bg-slate-900/60 border border-slate-800 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 text-white font-sans text-sm outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-white focus:border-purple-400 focus:ring-1 focus:ring-purple-200 text-sm outline-none transition-all"
                         placeholder="john@example.com"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="form-message" className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+                      <label htmlFor="form-message" className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
                         Your Message
                       </label>
                       <textarea
@@ -254,21 +254,23 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                         rows="5"
-                        className="w-full px-4 py-3 rounded-xl bg-slate-900/60 border border-slate-800 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 text-white font-sans text-sm outline-none transition-all resize-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-white focus:border-purple-400 focus:ring-1 focus:ring-purple-200 text-sm outline-none transition-all resize-none"
                         placeholder="How can I help you?"
                       />
                     </div>
 
                     {status === 'error' && (
-                      <p className="text-red-400 text-xs font-mono">
+                      <p className="text-rose-500 text-xs font-mono">
                         * Please fill in all the fields before submitting.
                       </p>
                     )}
 
-                    <button
+                    <motion.button
                       type="submit"
                       disabled={status === 'submitting'}
-                      className="flex items-center justify-center gap-2 w-full py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:from-purple-700 disabled:to-indigo-700 text-white font-semibold rounded-xl shadow-lg shadow-purple-500/5 hover:shadow-purple-500/10 active:scale-99 transition-all cursor-pointer"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex items-center justify-center gap-2 w-full py-4 bg-gradient-to-r from-purple-400 via-indigo-400 to-pink-400 disabled:opacity-80 text-white font-semibold rounded-xl shadow-md shadow-purple-100 hover:opacity-95 active:scale-99 transition-all cursor-pointer"
                       id="contact-form-submit"
                     >
                       {status === 'submitting' ? (
@@ -279,7 +281,7 @@ export default function Contact() {
                           <Send className="w-4 h-4" />
                         </>
                       )}
-                    </button>
+                    </motion.button>
                   </motion.form>
                 )}
               </AnimatePresence>

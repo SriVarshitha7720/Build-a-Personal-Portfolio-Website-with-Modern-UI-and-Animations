@@ -27,21 +27,21 @@ const projectsList = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 px-6 overflow-hidden">
+    <section id="projects" className="relative py-24 px-6 overflow-hidden bg-slate-50/20">
       {/* Background orbs */}
-      <div className="absolute bottom-10 left-10 w-[300px] h-[300px] bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute bottom-10 left-10 w-[300px] h-[300px] bg-indigo-100/20 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto">
         
         {/* Section Heading */}
         <div className="flex flex-col items-center mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-display text-slate-950 dark:text-white mb-4">
             Featured Projects
           </h2>
-          <p className="text-slate-400 max-w-lg font-light text-sm sm:text-base">
+          <p className="text-slate-500 dark:text-slate-400 max-w-lg font-light text-sm sm:text-base">
             A selection of web systems and mobile applications I've built, showcasing clean code structure and cloud configurations.
           </p>
-          <div className="w-12 h-1 bg-purple-500 rounded-full mt-4"></div>
+          <div className="w-12 h-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-4"></div>
         </div>
 
         {/* Project Grid */}
