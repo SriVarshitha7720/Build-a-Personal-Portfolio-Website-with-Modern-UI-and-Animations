@@ -103,7 +103,7 @@ export default function About() {
             {/* Download CV Action Button */}
             <div className="mt-8">
               <a
-                href="/resume.pdf"
+                href="./resume.pdf"
                 download
                 className="inline-flex items-center gap-3 pl-6 pr-2 py-2 bg-[#f0a202] hover:opacity-95 text-slate-950 font-bold rounded-full transition-all cursor-pointer group"
                 id="about-cv-download"
