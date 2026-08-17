@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 
 const projectsList = [
   {
-    title: "ACE: AI-Enabled Campus Community & Event Platform",
+    title: "ACE (Active Community Events): AI-Enabled Campus Platform",
     description: "An AI-powered mobile and web platform for college communication, club management, and event bookings. Features automatic department grouping, slot reservation, QR-based entry verification, and AI-driven smart summarization.",
     tags: ["React Native", "Node.js", "Express", "MongoDB", "Firebase", "AI Integration"],
     github: "https://github.com/SriVarshitha7720/ACE",
