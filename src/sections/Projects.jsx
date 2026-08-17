@@ -31,6 +31,48 @@ const projectsList = [
     demo: null
   },
   {
+    title: "Emotion Detection Learning Support Engine",
+    description: "An AI vision engine utilizing OpenCV and machine learning to analyze learner facial expressions and engagement during online education sessions, dynamically tailoring content delivery.",
+    tags: ["Python", "OpenCV", "AI/ML", "Computer Vision", "Deep Learning"],
+    github: "https://github.com/SriVarshitha7720/Emotion-Detection-Learning-Support-Engine",
+    demo: null
+  },
+  {
+    title: "Multi-Chain Wallet Transaction Tracker (Ethers.js & WebSockets)",
+    description: "A Web3 monitoring system that tracks real-time cryptocurrency wallet transactions across multiple EVM blockchain networks using Ethers.js and WebSocket event listeners.",
+    tags: ["JavaScript", "Ethers.js", "WebSockets", "Web3", "Blockchain"],
+    github: "https://github.com/SriVarshitha7720/Build-a-Multi-Chain-Wallet-Transaction-Tracker-with-Ethers.js-and-WebSockets",
+    demo: null
+  },
+  {
+    title: "Collaborative Document Store (Conflict-Free Versioning)",
+    description: "A real-time document storage engine featuring MongoDB optimistic concurrency control, conflict-free document versioning, and high-performance full-text search indexing.",
+    tags: ["JavaScript", "MongoDB", "Express", "Full-Text Search", "Versioning"],
+    github: "https://github.com/SriVarshitha7720/Build-a-Collaborative-Document-Store-with-MongoDB-Conflict-Free-Versioning-and-Full-Text-Search",
+    demo: null
+  },
+  {
+    title: "Application Tracking System (ATS) API with Message Queues",
+    description: "An enterprise candidate application tracking system API supporting multi-role permissions, status workflow automation, and background email queue processing.",
+    tags: ["JavaScript", "Node.js", "Express", "Message Queues", "RBAC"],
+    github: "https://github.com/SriVarshitha7720/Build-an-Application-Tracking-System-API-with-RBAC-and-Message-Queues",
+    demo: null
+  },
+  {
+    title: "RESTful URL Shortener with Analytics & Collision Handling",
+    description: "A high-throughput URL shortener service built with collision resolution algorithms, custom vanity aliases, and real-time click analytics tracking.",
+    tags: ["JavaScript", "Node.js", "Express", "Analytics", "Algorithm"],
+    github: "https://github.com/SriVarshitha7720/Build-a-RESTful-URL-Shortener-Service-with-Analytics-and-Collision-Handling",
+    demo: null
+  },
+  {
+    title: "News Portal with Puppeteer & Lighthouse Audit Automation",
+    description: "An automated news aggregator platform that scrapes articles via Puppeteer and continuously audits page performance and Core Web Vitals using automated Lighthouse CI scripts.",
+    tags: ["JavaScript", "Puppeteer", "Lighthouse", "Web Scraping", "Core Web Vitals"],
+    github: "https://github.com/SriVarshitha7720/Develop-a-News-Portal-with-Puppeteer-and-Lighthouse-Performance-Auditing",
+    demo: null
+  },
+  {
     title: "Schedule, Track and Pay with EASE",
     description: "Designed and developed a clean and modern website to streamline the student fee process. Reduced average waiting time through real-time queue tracking and waiting time estimation.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "GitHub Actions"],
