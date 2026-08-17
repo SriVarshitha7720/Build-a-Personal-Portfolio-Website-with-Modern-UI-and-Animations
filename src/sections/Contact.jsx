@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Send, CheckCircle2, ArrowRight, Brain, Trophy } from 'lucide-react';
+import { Mail, Send, CheckCircle2, ArrowRight, Brain, Trophy, Code2 } from 'lucide-react';
 
 const Github = ({ className = "w-6 h-6" }) => (
   <svg
@@ -196,6 +196,16 @@ export default function Contact() {
                   id="contact-social-codechef"
                 >
                   <Trophy className="w-5 h-5 text-yellow-600" /> CodeChef
+                </a>
+                <a
+                  href="https://www.hackerrank.com/profile/srivarshitha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 p-3 bg-white dark:bg-[#122619] border border-slate-200 dark:border-[#223d2b] text-slate-600 dark:text-slate-400 hover:border-[#f0a202]/30 dark:hover:border-[#f0a202]/30 hover:text-[#f0a202] dark:hover:text-[#f0a202] rounded-xl hover:-translate-y-1 transition-all text-xs font-mono shadow-sm"
+                  aria-label="HackerRank Profile"
+                  id="contact-social-hackerrank"
+                >
+                  <Code2 className="w-5 h-5 text-emerald-500" /> HackerRank
                 </a>
               </div>
             </div>
