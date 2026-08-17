@@ -22,13 +22,6 @@ const projectsList = [
     tags: ["AWS", "RDS", "S3", "IAM", "VPC", "Secure Data"],
     github: "https://github.com/SriVarshitha7720/Cloud-Services-for-Hospital-Website",
     demo: null
-  },
-  {
-    title: "FitTrack: React Native Activity Tracker",
-    description: "A cross-platform mobile application designed to log daily habits, track workouts, and sync statistics via secure REST APIs, using Redux and Material UI for a polished layout.",
-    tags: ["React Native", "Redux", "Material UI", "REST APIs", "Node.js"],
-    github: "https://github.com/SriVarshitha7720/React-Native-FitTrack",
-    demo: null
   }
 ];
 
