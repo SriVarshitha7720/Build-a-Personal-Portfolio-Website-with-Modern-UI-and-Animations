@@ -3,6 +3,13 @@ import ProjectCard from '../components/ProjectCard';
 
 const projectsList = [
   {
+    title: "ACE: AI-Enabled Campus Community & Event Platform",
+    description: "An AI-powered mobile and web platform for college communication, club management, and event bookings. Features automatic department grouping, slot reservation, QR-based entry verification, and AI-driven smart summarization.",
+    tags: ["React Native", "Node.js", "Express", "MongoDB", "Firebase", "AI Integration"],
+    github: "https://github.com/SriVarshitha7720/ACE",
+    demo: null
+  },
+  {
     title: "Schedule, Track and Pay with EASE",
     description: "Designed and developed a clean and modern website to streamline the student fee process. Reduced average waiting time through real-time queue tracking and waiting time estimation.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "GitHub Actions"],
