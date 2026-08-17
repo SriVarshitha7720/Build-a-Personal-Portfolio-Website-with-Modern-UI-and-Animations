@@ -10,17 +10,38 @@ const projectsList = [
     demo: null
   },
   {
+    title: "AI-Powered Climate Policy Debate Simulator",
+    description: "An intelligent simulation platform built with FastAPI and Ollama local LLMs to model multi-agent climate policy debates, evaluate policy proposals, and calculate economic impact metrics.",
+    tags: ["Python", "FastAPI", "Ollama LLM", "AI Simulation", "REST APIs"],
+    github: "https://github.com/SriVarshitha7720/Build-an-AI-Powered-Climate-Policy-Debate-Simulator-with-FastAPI-and-Ollama",
+    demo: null
+  },
+  {
+    title: "Collaborative Task Management API (WebSockets & RBAC)",
+    description: "A real-time collaborative workspace API featuring WebSockets event streaming, JWT authentication, and fine-grained Role-Based Access Control (RBAC) for team task execution.",
+    tags: ["TypeScript", "Node.js", "WebSockets", "Express", "JWT", "RBAC"],
+    github: "https://github.com/SriVarshitha7720/Build-a-Collaborative-Task-Management-API-with-WebSockets-and-Role-Based-Access-Control",
+    demo: null
+  },
+  {
+    title: "Async User Profile Service (Node.js & RabbitMQ)",
+    description: "A scalable backend microservice implementing asynchronous message queuing with RabbitMQ, Node.js, and MongoDB to process background user profile updates and heavy workloads reliably.",
+    tags: ["Node.js", "RabbitMQ", "MongoDB", "Express", "Microservices"],
+    github: "https://github.com/SriVarshitha7720/Build-User-Profile-Service-with-Asynchronous-Processing-using-Node.js-and-RabbitMQ",
+    demo: null
+  },
+  {
     title: "Schedule, Track and Pay with EASE",
     description: "Designed and developed a clean and modern website to streamline the student fee process. Reduced average waiting time through real-time queue tracking and waiting time estimation.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "GitHub Actions"],
-    github: "https://github.com/SriVarshitha7720/Schedule-Track-and-Pay-with-EASE",
+    github: "https://github.com/SriVarshitha7720/ScheduleTrack-and-Pay-with-EASE",
     demo: "https://srivarshitha7720.github.io/Schedule-Track-and-Pay-with-EASE"
   },
   {
     title: "Abstracting Cloud Services for Hospital Website",
     description: "A confidential patient data management system using AWS cloud services. Configured IAM policies and private VPC setups for secure patient data access and storage in RDS & S3.",
     tags: ["AWS", "RDS", "S3", "IAM", "VPC", "Secure Data"],
-    github: "https://github.com/SriVarshitha7720/Cloud-Services-for-Hospital-Website",
+    github: "https://github.com/SriVarshitha7720/Abstracting-Cloud-Services-for-Hospital-Website",
     demo: null
   }
 ];
