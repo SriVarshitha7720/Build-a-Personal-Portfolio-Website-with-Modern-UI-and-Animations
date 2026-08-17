@@ -31,13 +31,6 @@ const projectsList = [
     demo: null
   },
   {
-    title: "Emotion Detection Learning Support Engine",
-    description: "An AI vision engine utilizing OpenCV and machine learning to analyze learner facial expressions and engagement during online education sessions, dynamically tailoring content delivery.",
-    tags: ["Python", "OpenCV", "AI/ML", "Computer Vision", "Deep Learning"],
-    github: "https://github.com/SriVarshitha7720/Emotion-Detection-Learning-Support-Engine",
-    demo: null
-  },
-  {
     title: "Multi-Chain Wallet Transaction Tracker (Ethers.js & WebSockets)",
     description: "A Web3 monitoring system that tracks real-time cryptocurrency wallet transactions across multiple EVM blockchain networks using Ethers.js and WebSocket event listeners.",
     tags: ["JavaScript", "Ethers.js", "WebSockets", "Web3", "Blockchain"],
