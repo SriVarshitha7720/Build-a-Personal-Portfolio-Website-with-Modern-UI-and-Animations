@@ -48,8 +48,7 @@ export default function Contact() {
     });
   };
 
-  // Get your free access key at https://web3forms.com/ by entering your email (narlasrivarshitha@gmail.com)
-  const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"; // Replace with your free Web3Forms Access Key
+  const WEB3FORMS_ACCESS_KEY = "f5c857dc-553d-484d-8059-1bb2aba4bed5";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -69,7 +68,7 @@ export default function Contact() {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: WEB3FORMS_ACCESS_KEY !== "YOUR_ACCESS_KEY_HERE" ? WEB3FORMS_ACCESS_KEY : "YOUR_ACCESS_KEY_HERE",
+          access_key: WEB3FORMS_ACCESS_KEY,
           name: formState.name,
           email: formState.email,
           message: formState.message,
